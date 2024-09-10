@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - BMW X5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+      background-image: url('https://www.hdcarwallpapers.com/download/abt_audi_a6_3_0_tdi_avant_2019_4k-2560x1440.jpg');
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    }
+    </style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">BRABUS</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#cars">Cars</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="billing" class="billing-section">
+        <h1>Billing for BMW X5</h1>
+        <div class="billing-content">
+            <p><strong>Car:</strong> BMW X5</p>
+            <p><strong>Price per day:</strong> $120</p>
+            <form>
+                <label for="days">Number of Days:</label>
+                <input type="number" id="days" name="days" required><br>
+
+                <label for="total">Total Cost:</label>
+                <input type="text" id="total" name="total" readonly><br>
+
+                <button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+
+                <label for="billing-info">Enter Billing Information:</label><br>
+                <input type="text" id="billing-info" name="billing-info" placeholder="Card Number" required><br>
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BRABUS Car Booking</p>
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            const days = document.getElementById('days').value;
+            const pricePerDay = 120;
+            const total = days * pricePerDay;
+            document.getElementById('total').value = `$${total}`;
+        }
+    </script>
+</body>
+</html>

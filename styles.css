@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #e6e6e6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .nav-links a:hover {
+    color: #ff0000;
+}
+
+#hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px; /* To offset fixed header */
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #ddd;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e60000;
+}
+
+#cars {
+    padding: 100px 20px 50px 20px; /* Extra top padding to offset fixed header */
+    text-align: center;
+}
+
+#cars h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.car-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car {
+    background-color: #222;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.car h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car p {
+    color: #bbb;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.book-now {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #e60000;
+}
+
+#about, #contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin-top: 50px;
+}
+
+#about h2, #contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p, #contact p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* Car Detail Page Styles */
+.car-detail-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* To offset fixed header */
+}
+
+.car-detail-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.car-detail-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car-detail-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.car-detail-content .price {
+    font-size: 24px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.car-detail-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.billing-section {
+    padding: 100px 20px 50px 20px; /* Extra top padding to offset fixed header */
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.billing-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.billing-content {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.billing-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.billing-content form {
+    margin-top: 20px;
+}
+
+.billing-content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.billing-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ddd;
+}
+
+.billing-content input:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+.billing-content button {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.billing-content button:hover {
+    background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .car-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-detail-content {
+        width: 90%;
+    }
+}
