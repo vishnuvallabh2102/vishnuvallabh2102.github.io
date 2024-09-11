@@ -276,6 +276,13 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+header {
+    animation: fadeIn 1s ease-in;
+}
 
     .car-detail-content {
         width: 90%;
