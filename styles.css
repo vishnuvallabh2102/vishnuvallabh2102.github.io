@@ -288,3 +288,10 @@ header {
         width: 90%;
     }
 }
+.parallax {
+    background-image: url('bmw-m5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
